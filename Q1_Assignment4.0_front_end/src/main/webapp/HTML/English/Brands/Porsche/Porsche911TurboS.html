@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- Language of the page in english -->
+<html lang="en">
+	<head>
+		<!-- Title of the page + CSS link + FONT link + Responsive Web design -->
+		<title>Luxury Car Rental by Killian DECHAMPS</title>
+		<link rel="website icon" type="png" href="..\..\..\..\Images\Logos\Logo1.PNG">
+		<link rel="stylesheet" href="..\..\..\..\Css\Style.css">
+		<link rel="stylesheet" href="..\..\..\..\Css\NavigationBar.css">
+		<link rel="stylesheet" href="..\..\..\..\Css\Rent-QuoteBar.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      	<script src="..\..\..\..\Javascript\DiapoCarImg.js"></script>
+      	<script src="..\..\..\..\Javascript/LoggedIn.js"></script>
+      	<script src="..\..\..\..\Javascript/index.js"></script>
+	</head>
+	<body>
+		<!--Start of the page -->
+		<section class="page">
+         
+			<!-- First line of the topper -->
+            <section class="first">
+               <!-- Language choice with a dropdown button -->
+               <div class="language">
+                  <!-- &#xxxx to create the down arrow -->
+                 <button class="language-dropdown">English &#9662</button>  
+                    <div class="choice-language">
+                     <!-- Link -->
+                      <a href="..\..\..\..\HTML\English\Brands\Porsche\Porsche911TurboS.html">English</a>
+                      <a href="..\..\..\..\HTML\French\Brands\Porsche\Porsche911TurboS.html">Fran&#231;ais</a>
+                    </div>
+               </div>
+               <!-- Buttons to login or register with link -->
+               <div class="nav-buttons">
+                  <a href="..\..\..\..\HTML\English\Login.html"><button id="logButton" class="login">Login</button></a>
+                  <a href="..\..\..\..\HTML\English\Register.html"><button id="regButton" class="Sign-UP">Register Now</button></a>
+                  <a href="..\..\..\..\HTML\English\MyAccount.html"><button id="accountButton" class="Sign-UP"></button></a>  
+                  <button type="button" id="logout">Log out</button>
+               </div>
+            </section>
+            <!-- End of the first line of the topper -->
+
+            <!-- Second line of the topper -->
+            <section class="second">
+               <!-- Image with a link when you click on it -->
+               <a href="..\..\..\..\index.html"><img class="logo" src="..\..\..\..\Images\Logos\Logo.PNG" alt="Company logo"></a>
+               <!-- Main Title of the page -->
+               <h1 class="title"><span class="blue">LUXURY </span><span class="white">CAR </span><span class="red">RENTAL</span></h1>
+               <!-- Social networks images with links -->
+               <div class="social-network">
+                  <p class="horizontal"><a href="https://www.linkedin.com/feed/?hl=en" target="_blank"><img class="social-logo" src="..\..\..\..\Images\Logos\Linkedin.png" alt="Linkedin logo"></a></p>
+                  <p class="horizontal"><a href="https://www.youtube.com/results?search_query=test+drive+supercars+" target="_blank"><img class="social-logo" src="..\..\..\..\Images\Logos\Youtube.png" alt="Youtube logo"></a></p>
+               </div>
+            </section>
+            <!-- End of the second line of the topper -->
+
+
+            <!-- Start of the navigation bar -->
+            <!-- Logo of the navagation bar button -->
+		      <div class="btn">
+		         <span class="fas fa-bars"></span>
+		      </div>
+		      <!-- Navigation bar -->
+		      <nav class="sidebar">
+		         <div class="text">
+		            Menu
+		         </div>
+		         <!-- List of navigation bar elements -->
+		         <ul>
+		            <li><a href="..\..\..\..\index.html">Home <i id="home" class="fa-solid fa-house"></i></a></li>
+		            <li><a href="..\..\..\..\HTML\English\MyAccount.html">My account <i id="account" class="fa-solid fa-user"></i></a></li>
+		            <li><a href="..\..\..\..\HTML\English\Brands\MyReservation.html">My reservation <i id="reservation" class="fa-solid fa-clipboard-list"></i></a></li>
+		            <li class="active">
+		               <p class="feat-btn">Brands 
+		               <span class="fas fa-caret-down two"></span>
+		               </p>
+		               <!-- Sub-list of navigation bar items -->
+		               <ul class="feat-show">
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\Brands.html">Brands</a></li>
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\AstonMartin\AstonMartin.html">Aston Martin</a></li>
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\Bugatti\Bugatti.html">Bugatti</a></li>
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\Ferrari\Ferrari.html">Ferrari</a></li>
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\Lamborghini\Lamborghini.html">Lamborghini</a></li>
+		                  <li><a class="other" href="..\..\..\..\HTML\English\Brands\McLaren\McLaren.html">McLaren</a></li>
+		                  <li><a class="active" href="..\..\..\..\HTML\English\Brands\Porsche\Porsche.html">Porsche</a></li>
+		               </ul>
+		            </li>
+		            <li><a href="..\..\..\..\HTML\English\Blog.html">Blog <i id="blog" class="fa-brands fa-blogger-b"></i></a></li>
+		            <li><a href="..\..\..\..\HTML\English\Contact.html">Contact <i id="contact" class="fa-solid fa-address-card"></i></a></li>
+		         </ul>
+		      </nav>
+				<!-- End of the navigation bar -->
+
+
+			<!-- Start of the header -->
+			<header>
+			<!-- Logo for the rental button -->
+				<div class="btn2">
+         		<span>Rent/Quote</span>
+      		</div>
+      		<!-- Rental bar -->
+     			<div class="sidebar2">
+         		<ul>
+		            <li><a href="..\..\..\..\HTML\English\Brands\Rent.html">Rent<i id="rent" class="fa-solid fa-car-side"></i></a></li>
+		            <li><a href="..\..\..\..\HTML\English\Brands\Quote.html">Quote<i id="quote" class="fa-solid fa-file"></i></a></li>
+		         </ul>
+      		</div>
+      		<!-- Text -->
+				<h2 class="name-car">Porsche 911 Turbo S</h2>
+				<!-- Div for the slider-->
+				<div class="slider-container">
+					<!-- Div for all the image in the diapo -->
+		            <div class="carImg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\1.jpg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\2.jpg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\3.jpg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\4.jpg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\5.jpg">
+		            	<img class="diapo" src="..\..\..\..\Images\Porsche\911TurboS\6.jpg">
+		            	<!-- Button to move from one image to another -->
+					      <button class="btn3 left" onclick="dplcmt(-1)">&#10094</button>
+					      <button class="btn3 right" onclick="dplcmt(1)">&#10095</button>
+		            </div>
+        		</div>
+        		<!-- Text -->
+        		<section class="info-car">
+        				<div class="text-car">
+        					<p>Our engineers like to talk about the most perfect sports car ever. Incredible performance, whilst being comfortable and fully suitable for everyday use. The 911 Turbo models continue this philosophy.</p>
+        				</div>
+        				<!-- Table caracteristic car -->
+        				<div class="table-car">
+        					<table class="carac-car">
+							    <caption class="table-title">Car Caracteristics</caption>
+							      <tr>
+							        <th>MAXIMUM POWER</th>
+							        <td>650HP at 6750 tr/min</td>
+							      </tr>
+							    <tr>
+							      <th>MAXIMUM SPEED</th>
+							      <td>330 km/h</td>
+							    </tr>
+							    <tr>
+							      <th>ACCELERATION FROM 0-100 KM/H</th>
+							      <td>2,7s</td>
+							    </tr>
+							    <tr>
+							      <th>MAXIMUM TORQUE</th>
+							      <td>800 Nm</td>
+							    </tr>
+						  </table>
+        				</div>
+        				<!-- Table rental car -->
+        				<div class="table2-car">
+						  <table class="price-car">
+						  		<caption class="table-title">Rent Price</caption>
+							      <tr>
+							        <th>1 day</th>
+							        <td>750&euro;</td>
+							      </tr>
+							    <tr>
+							      <th>1 week</th>
+							      <td>4500&euro;</td>							      
+							    </tr>
+							    <tr>
+							      <th>1 circuit day</th>
+							      <td>3000&euro;</td>
+							    </tr>
+							    <tr>
+							      <th>Additional 100km</th>
+							      <td>150&euro;</td>
+							    </tr>
+						  </table>
+        				</div>
+        				<!-- Div for the youtube video -->
+        				<div class="video">
+						<iframe src="https://www.youtube.com/embed/FlmE3yEoYGc" allowfullscreen>
+						</iframe>
+					</div>
+        		</section>
+			</header>
+			<!-- End of the header -->
+
+
+			<!-- Start of the footer of page -->
+			<footer>
+				<!-- Create different columns for the footer page -->
+				<div class="columns">
+					<!-- Each columns has link to other page -->
+					<div class="column">
+						<h2>Links</h2>
+						<p><a href="..\..\..\..\index.html"><button>Home</button></a></p>
+						<p><a href="..\..\..\..\HTML\English\Register.html"><button>Register</button></a></p>
+						<p><a href="..\..\..\..\HTML\English\Login.html"><button>Login</button></a></p>
+					</div>
+					<div class="column">
+						<h2>Informations</h2>
+						<p><a href="..\..\..\..\HTML\English\Cookies.html"><button>Cookies</button></a></p>
+					</div>
+					<div class="column">
+						<h2>Need help ?</h2>
+						<p><a href="..\..\..\..\HTML\English\Contact.html"><button>Contact us</button></a></p>
+					</div>
+				</div>
+				<h5 class="id">Killian DECHAMPS, DCU</h5>
+			</footer>
+			<!-- End of the footer of page -->
+
+		</section>
+		<!-- End of the page -->
+
+
+		<!-- Calls javascript functions present in the jquery library -->
+		<script>
+			/*Navigation bar*/
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+
+           /*Rental bar*/
+           $('.btn2').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar2').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('div ul .feat-show').toggleClass("show");
+           });
+           $('.serv-btn').click(function(){
+             $('div ul .serv-show').toggleClass("show1");
+           });
+           $('div ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+
+           /*Diaporama car image*/
+           var position=1;
+			  	 showPicture(position);
+      </script>
+	</body>
+</html>

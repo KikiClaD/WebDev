@@ -1,0 +1,99 @@
+/*Panel of colors:  #2E3244 night blue
+                    #C5C6C6 grey
+                    #FFFFFF white
+                    #FF0000 red
+                    #516079 blue grey
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+/*----------------------------------------------- START RENT/QUOTE BAR STYLE -----------------------------------------*/
+
+/*Button wich allow to have the transition of the nav bar*/
+.btn2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  right: 0px;
+  top: 145px;
+  height: 45px;
+  width: 170px;
+  text-align: center;
+  background: #2E3244;
+  cursor: pointer;
+}
+
+/*Change the color with span*/
+.btn2 span:hover{
+  color: #FF0000 ;
+}
+
+/*When the user click on the button, the button goes to 230px on the left*/
+.btn2.click{
+  right: 240px;
+}
+
+/*Style of the button*/
+.btn2 span{
+  color: white;
+  font-size: 23px;
+  line-height: 45px;
+}
+
+/*Do not display the sidebar in normal time*/
+.sidebar2{
+  display: none;
+}
+
+/*Show the Rent/Quote bar on the right side*/
+.sidebar2.show{
+  margin-top: -1182px;
+  display: initial;
+  position: absolute;
+  width: 240px;
+  height: 120px;
+  right: 0px;
+  background: #2E3244;
+}
+
+/*---------All parameters for the style of the Rent/Quote Bar-----------*/
+/*List general parameters*/
+.sidebar2 ul{
+  font-family: 'Poppins', sans-serif;
+  background: #2E3244;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+/*Border line list*/
+.sidebar2 ul li{
+  line-height: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+/*Style for all the link in the list*/
+.sidebar2 ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+/*Style when the mouse is hover the link*/
+.sidebar2 ul li a:hover{
+  background: #000000;
+}
+/*Style to aline all the logos in the Rent/Quote bar*/
+.sidebar2 ul li a #louerFr{
+  margin-left: 85px;
+}
+.sidebar2 ul li a #devisFr{
+  margin-left: 90px;
+}
+
+/*----------------------------------------------- END RENT/QUOTE BAR STYLE -----------------------------------------*/

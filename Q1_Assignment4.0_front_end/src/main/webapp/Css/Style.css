@@ -1,0 +1,1373 @@
+/*Panel of colors:  #2E3244 night blue
+                    #C5C6C6 grey
+                    #FFFFFF white
+                    #FF0000 red
+                    #516079 blue grey
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+/*----------------------------------------------- START RESPONSIVE PARAMETERS FOR PHONE SIZE -----------------------------------------*/
+/*When the screen size is too small (example: phone size), 
+we change some parameters for a clean display*/
+@media screen and (max-width: 800px)
+{
+  header{
+    height: 900px;
+  }
+  /*--------START OF THE MAIN PAGE --------*/
+  /*To keep the first line aligned*/
+  .first .language-dropdown {
+    padding: 14px 0px;
+    margin-left: -10px;
+  }
+  /*Put the logo in the center of the page*/
+  .second .logo{
+    margin-left: 70px;
+  }
+  /*Do not display the title*/
+  .second .title{
+    display: none;
+  }
+  /*Do not display the icons*/
+  .second .social-network{
+    display: none;
+  }
+  /*Reduce the height of the image so that it is not distorted*/
+  header .photo{
+    max-height: 170px;
+  }
+  /*Allow the text to take up the entire width of the page (not including the margins)*/
+  header .service-text{
+  width: 100%;
+  }
+  /*Reduce font size for h2 in the footer*/
+  .columns .column h2{
+    font-size: 15px;
+  }
+  /*-----------END OF THE MAIN PAGE-------------*/
+
+  /*--------START OF THE BLOG PAGE --------*/
+  /*Define the dimensions of the image*/
+  header .articles .article .left img{
+    max-width: 100%;
+    max-height: 80%;
+  }
+  /*Text placement and size*/
+  header .articles .article .right{
+    margin-top: -50px;
+    min-width: 100%;
+  }
+  /*-----------END OF THE BLOG PAGE-------------*/
+  /*-----------START OF THE LOGIN AND REGISTER PAGE-------------*/
+  header .log{
+  max-width: 350px;
+  max-height: 500px;
+  }
+
+  /*Placement of inputs on the page*/
+  header .log .inputs{
+    margin-left: 5px;
+    width: 300px;
+  }
+
+  header .Reg{
+  max-width: 350px;
+  max-height: 700px;
+  }
+
+  /*Placement of inputs on the page*/
+  header .Reg .inputs{
+    margin-left: 5px;
+    width: 300px;
+  }
+  /*-----------END OF THE LOGIN AND REGISTER PAGE-------------*/
+  header .rent{
+  margin-top: 100px;
+}
+
+/*Margin right and left to have the element in the center of the page*/
+.main .brands .brand{
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+/*Size for the image*/
+.main .brands .brand img{
+  width: 100px;
+  height: 80px;
+  margin-top: 8px;
+}
+
+/*Size for the porsche logo*/
+.main .brands .brand .spe{
+  width: 90px;
+  height: 80px;
+  margin-top: 8px;
+}
+
+/*Style for the youtube video*/
+.main .video iframe{
+  max-height: 200px;
+}
+
+/*-----------END OF THE BRAND PAGES-------------*/
+
+header .Brands-name{
+  padding-bottom: 80px;
+}
+/*Parameters of the photo*/
+header .Brands-name .Brand-name .photo{
+  margin-top: 15px;
+  margin-left: -10px;
+  cursor: pointer;
+}
+header .Brands-name .Brand-name .photo .name{
+    font-size: 12px;
+  }
+
+/*Image sizing*/
+section .Brands-name .Brand-name .photo img{
+  width: 300px;
+  height: 150px;
+}
+
+/*Parameters for the youtube video*/
+.Brands-name .video iframe{
+  max-height: 200px;
+}
+
+/*We don't want the slider anymore, only an image */
+  header .slider-container .menu {
+      display: none;
+  }
+
+  /*We adjust the size of the image*/
+  header .slider-container img{
+      max-width: 300px;
+      max-height: 17500px;
+  }
+  /*We adjust the margins so that the text takes the whole width*/
+  header .info-car .text-car p{
+    margin-top: 150px;
+    margin-left: -150px;
+    margin-right: -150px;
+  }
+  /*We reduce the size of the text*/
+  header .info-car .carac-car{
+    font-size: 12px;
+  }
+  /*Adjusting the size of the video*/
+  header .info-car .video iframe{
+    max-width: 300px;
+    max-height: 150px;
+  }
+
+  /*MY ACCOUNT */
+header .log .infos .account{
+  margin: 0px;
+}
+
+header .log .infos .account th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+
+}
+
+header .log .infos .account td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+
+/*Text title style*/
+header .log .logoff{
+  color: #FF0000;
+  font-family: 'Popins;', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*Button style*/
+header .log .create{
+  margin-top: 50px;
+}
+
+}
+
+/*----------------------------------------------- END RESPONSIVE PARAMETERS FOR PHONE SIZE -----------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------- START CSS FOR THE WEBSITE --------------------------------------------------------*/
+
+
+/*------------------------------- START OF THE INDEX PAGE -------------------------------*/
+
+section .first{
+  background-color: #516079; /*to change the color of the background of the page*/
+  padding: 0px 50px; /*to add a margin on each side of the page*/
+  display: flex; /*to align the elements on the same line */
+  justify-content: space-between; /*to spread the elements on each side of the page */
+  flex-wrap: wrap; /*to put the element on the next line if the page is too small*/
+  font-size: 14px; /*to change the size of the font*/
+}
+
+section .language-dropdown {
+  background-color: #516079;
+  color: #FFFFFF;
+  padding: 16px;
+  font-size: 14px;
+  border: none; /*Removes the border created by the button*/
+  font-family: 'Noto Sans Mono', monospace; /*change font*/
+}
+
+section .choice-language {
+  display: none; /*Keeps hidden the text we don't want to display*/
+  position: absolute; /*Display the new text on top of the rest of the page*/
+  background-color: #FFFFFF;
+}
+
+section .choice-language a {
+  color: #2E3244;
+  padding: 14px 16px;
+  text-decoration: none; /*Delete the link line*/
+  display: block; /*Displays in blocks one below the other*/
+  font-size: 14px;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+/*Change the text color of the link when the mouse is hover the button*/
+section .choice-language a:hover{color: #FF0000;}
+
+/*Displays the drop-down menu in block when the mouse is hover the button*/
+section .language:hover .choice-language {display: inline-block;}
+
+/*Change the text color of the button when the mouse is hover the button*/
+section .language:hover .language-dropdown {color: #FF0000;}
+
+/*General parameters of the button*/
+section .nav-buttons button{
+  padding: 14px 18px;
+  border: none;
+  background-color: #516079;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+/*Change the text color when the mouse is hover the text*/
+section .nav-buttons button:hover{
+  color: #FF0000;
+}
+
+/*General parameters of the second nav line*/
+section .second{
+  background-color: #2E3244;
+  padding: 0px 50px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Margin and size of logos*/
+section .logo{
+  margin: 20px 0px;
+  width: 150px;
+  height: 50px;
+}
+
+/*Font and margin of the title*/
+section .second .title{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 27px;
+  font-family: 'Peralta', cursive;
+}
+
+/*Make the title more beautiful with <span>*/
+section .title .blue{
+  color: #0000FF;
+}
+section .title .white{
+  color: #FFFFFF;
+}
+section .title .red{
+  color: #FF0000;
+}
+
+/*General parameters for the logo of social network*/
+section .social-network{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*Margin and size of the logos*/
+section .social-logo{
+  margin-top: 25px;
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+/*General parameters for the header part*/
+header{
+  background-color: #516079;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column; /*Allows to establish the main axis of the elements*/
+  justify-content: center; /*center the elements in the middle of the page*/
+  align-items: center; /*align all the elements in the middle of the page*/
+  min-height: 750px;
+}
+
+/*Size of the photo*/
+header .photo{
+  margin-top: 20px;
+  max-width: 70%;
+  height: 350px;
+}
+
+/*Parameters for the title on the different pages*/
+header .title{
+  text-align: center; /*algign the text in the middle of the page*/
+  color: #2E3244;
+  font-family: 'Peralta', cursive;
+  font-size: 23px;
+  font-weight: bold; /*bold font*/
+  margin-bottom: 20px;
+}
+
+/*Parameters for the service text*/
+header .service-text{
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 0px 185px;
+}
+/*--- End of the header page ---*/
+
+
+/*--- Start of the footer ---*/
+footer{
+  background-color: #2E3244;
+  padding: 10px 50px;
+  color: #C5C6C6;
+  font-family: 'Poppins', sans-serif;
+  min-height: 160px;
+}
+
+/*We place the elements in columns*/
+footer .columns{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+/*General style of the footer button*/
+footer .columns button{
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  color: #C5C6C6;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*When we are hover the button*/
+.columns button:hover{
+  color: #FF0000;
+}
+
+footer .id{
+  background-color: inherit;
+  float: right;
+}
+/*--- End of the footer ---*/
+
+/*------------------------------- EN OF THE INDEX PAGE -------------------------------*/
+
+
+/*------------------------------- START FR PAGE -------------------------------*/
+
+/*General parameter for the page*/
+header .page{
+  min-width: 600px;
+}
+
+/*Style for text*/
+header .page .Problem{
+  padding-top: 11px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*Style for text*/
+header .page .Appologized{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-bottom: 11px;
+  color: #FFFFFF;
+}
+
+/*------------------------------- END FR PAGE -------------------------------*/
+
+
+/*------------------------------- START COOKIES PAGE -------------------------------*/
+
+/*General parameter for the page*/
+header .page{
+  min-width: 600px;
+}
+
+/*Style for text*/
+header .page .Problem{
+  padding-top: 11px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*Style for text*/
+header .page .Appologized{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding-bottom: 11px;
+  color: #FFFFFF;
+}
+
+/*------------------------------- END COOKIES PAGE -------------------------------*/
+
+
+/*------------------------------- START OF THE LOGIN PAGE -------------------------------*/
+
+/*Style of the header for the login page*/
+header .log{
+  justify-content: center;
+  align-items: center;
+  background-color: #2E3244;
+  border-radius: 20px;
+  border: 2px solid;
+  color: #FFFFFF;
+  background-image:url(Images/login.png);
+  background-position:center center;
+  background-repeat : no-repeat ;
+  width: 500px;
+  height: 500px;
+  margin: 20px 400px;
+  padding: 20px;
+}
+
+/*Text style for the form login*/
+form .login{
+  color: #FF0000;
+  text-align: center;
+  font-family: 'Peralta', cursive;
+  font-size: 30px;
+}
+
+header .log .social-network{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/*Size for the logo*/
+header .log .social-logo{
+  padding: 0px 20px;
+  width: 100px;
+  height: 50px;
+}
+
+/*Text style*/
+form p.email{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+form p.email span{
+  color: #FF0000;
+}
+
+/*Inputs general place in the page*/
+form .inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Inputs style*/
+form .inputs input[type="text"], input[type="password"]{
+padding: 15px;
+border-radius: 10px;
+border: none;
+background-color: #FFFFFF;
+margin-bottom: 10px;
+outline: none;
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+}
+
+/*Text style*/
+form p.Register{
+  margin-top: -5px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+form p.Register span a{
+  color: #FF0000;
+}
+
+/*Button style*/
+form .inputs input[type="submit"]{
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #2E3244;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #FF0000;
+  cursor: pointer;
+  outline: none;
+}
+
+/*Text style*/
+header #connected {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*------------------------------- END OF THE LOGIN PAGE -------------------------------*/
+
+
+/*------------------------------- START OF THE REGISTER PAGE -------------------------------*/
+
+/*General style for the register page*/
+header .Reg{
+  justify-content: center;
+  align-items: center;
+  background-color: #2E3244;
+  width: 500px;
+  height: 750px;
+  margin: 50px 400px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid;
+  color: #FFFFFF;
+  background-image:url(Images/register.png);
+  background-position:center center;
+  background-repeat : no-repeat ;
+}
+
+/*Space between the title and the text*/
+header .Register{
+  padding-bottom: 20px;
+}
+
+/*Text style*/
+header .Reg .Register{
+  color: #FF0000;
+  text-align: center;
+  font-family: 'Peralta', cursive;
+  font-size: 30px;
+}
+
+/*Inputs general place in the page*/
+header .Reg #inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Inputs style*/
+header .Reg #inputs input[id="id"], input[id="surname"], input[id="firstname"], input[id="email"], input[id="username"], input[id="password"]{
+padding: 15px;
+border-radius: 10px;
+border: none;
+background-color: #FFFFFF;
+margin-bottom: 20px;
+outline: none;
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+display: flex;
+}
+
+/*Label text style*/
+header .Reg .conditions{
+  margin-top: 40px;
+}
+
+/*Label text style*/
+header .Reg #inputs label{
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*Text syle*/
+header .Reg .Account{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*Color span link*/
+header .Reg span a{
+  color: #FF0000; 
+}
+
+/*Button style*/
+header .Reg .create{
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #2E3244;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #FF0000;
+  cursor: pointer;
+  color: #2E3244;
+}
+
+/*Text style*/
+header #alreadyConnected {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*------------------------------- END OF THE REGISTER PAGE -------------------------------*/
+
+
+/*------------------------------- START OF THE BLOG PAGE -------------------------------*/
+
+/*Header style at the top of the page*/
+header .articles{
+  margin-top: 30px;
+}
+
+/*General parameters for the article*/
+header .articles .article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/*Image size on the left side of the page*/
+header .articles .article .left img{
+  height: 300px;
+  width: 600px;
+}
+
+/*Text parameters on the right side of the page*/
+header .articles .article .right{
+  max-width: 40%;
+  margin-left: 40px;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+/*------------------------------- END OF THE BLOG PAGE -------------------------------*/
+
+
+/*------------------------------- START OF THE CONTACT PAGE -------------------------------*/
+
+/*Size parameters of the page*/
+header .page{
+  min-height: 600px;
+}
+
+/*Text style for the title*/
+header .page .title-contact{
+  margin-top: 150px;
+  color: #FF0000;
+  text-align: center;
+  font-family: 'Peralta', cursive;
+  font-size: 30px;
+}
+
+/*Text style*/
+header .page .openning{
+  margin-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Popins;', sans-serif;
+  font-size: 18px;
+}
+
+/*General style for the info text*/
+header .page .infos{
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Popins;', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Parameters for the info part */
+header .page .infos .info{
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*Text style for the link*/
+header .page .infos .info a{
+  color: #FF0000;
+  text-decoration: none;
+}
+
+/*------------------------------- END OF THE CONTACT PAGE -------------------------------*/
+
+
+/*------------------------------- START OF THE BRANDS PAGE -------------------------------*/
+
+/*General style of the page*/
+.main{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Parameters for the brands section*/
+section .brands{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Margin right and left to have the element in the center of the page*/
+section .brands .brand{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/*Size for the image*/
+section .brands .brand img{
+  width: 200px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+/*Size for the porsche logo*/
+section .brands .brand .spe{
+  width: 175px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+/*Parameters for the video*/
+.main .video{
+  margin-top: 50px;
+  width: 90%;
+}
+
+/*Style for the youtube video*/
+.main .video iframe{
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+}
+
+/*------------------------------- END OF THE BRANDS PAGE -------------------------------*/
+
+
+/*------------------------------- START OF ONE SPECIAL BRANDS PAGE -------------------------------*/
+
+/*Text style*/
+header .rent{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 35px;
+  font-family: 'Peralta', cursive;
+}
+
+/*Color span*/
+header .rent span{
+  color: #FF0000;
+}
+
+/*General parameters of the brands page*/
+.Brands-name{
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Parameters for the photo section*/
+section .Brand-name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*Parameters of the photo*/
+section .Brand-name .photo{
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*Image sizing*/
+section .Brand-name .photo img{
+  width: 350px;
+  height: 225px;
+}
+
+/*Text parameters*/
+section .Brand-name .photo .name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+/*Parameters of the video size*/
+.Brands-name .video{
+  margin-top: 50px;
+  width: 90%;
+}
+
+/*Parameters for the youtube video*/
+.Brands-name .video iframe{
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+}
+/*------------------------------- END OF ONE SPECIAL BRANDS PAGE -------------------------------*/
+
+
+/*------------------------------- START TECHNICAL CAR PAGE -------------------------------*/
+
+/*Text style*/
+header .name-car{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-family: 'Peralta', cursive;
+}
+
+/*Parameters for the image*/
+header .slider-container .carImg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  position: relative;
+}
+
+/*Button style*/
+header .slider-container .carImg .btn3{
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: #2E3244;
+  border-radius: 50px;
+}
+
+/*Style when the mouse is hover the button*/
+header .slider-container .carImg .btn3:hover{
+  color: #FF0000;
+}
+
+/*Size and border for the image*/
+header .slider-container .carImg .diapo{
+  width: 100%;
+  height: 337px;
+  border-radius: 25px;
+}
+
+/*Button left parameters*/
+header .slider-container .carImg .left{
+  position: absolute;
+  top: 143px;
+  left: -25px;
+}
+
+/*Button right parameters*/
+header .slider-container .carImg .right{
+  position: absolute;
+  top: 143px;
+  right: -25px;
+}
+
+/*Parameter for the text*/
+header .info-car{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Style for the text*/
+header .info-car .text-car{
+  flex-wrap: wrap;
+  margin-left: 250px;
+  margin-right: 250px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Popins;', sans-serif;
+  font-size: 18px;
+}
+
+/*Table parameters*/
+header .info-car .carac-car{
+  padding-left: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-collapse: collapse;
+  color: #FFFFFF;
+}
+
+/*Column and line style in the table*/
+header .info-car .carac-car td, header .info-car .carac-car th {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+/*Change the color background 1 line of 2*/
+header .info-car .carac-car tr:nth-child(even){background-color: #2E3244;}
+
+/*Text style for th*/
+header .info-car .carac-car th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+/*Change the color background 1 line of 2*/
+header .info-car .carac-car th:nth-child(even){background-color: #2E3244;}
+
+/*Text style for the table title*/
+header .info-car caption{
+  color: #2E3244;
+  font-family: 'Popins;', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*Table parameters*/
+header .info-car .price-car{
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-collapse: collapse;
+  color: #FFFFFF;
+}
+
+/*Column and line style in the table*/
+header  .info-car .price-car td, header .info-car .price-car th {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+/*Change the color background 1 line of 2*/
+header .info-car .price-car tr:nth-child(even){background-color: #2E3244;}
+
+/*Text style for th*/
+header  .info-car .price-car th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: white;
+}
+
+/*Change the color background 1 line of 2*/
+header .info-car .price-car th:nth-child(even){background-color: #2E3244;}
+
+/*Parameters for the video*/
+header .info-car .video{
+  margin-top: 50px;
+  width: 70%;
+}
+
+/*Parameters for youtube*/
+header .info-car .video iframe{
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+}
+
+/*------------------------------- END TECHNICAL CAR PAGE -------------------------------*/
+
+
+/*------------------------------- START MY ACCOUNT PAGE -------------------------------*/
+
+/*Style of the page with a fixed background image*/
+.pageMyAccount{
+  background-color:#FFFFFF;
+  background-attachment:fixed;
+  background-image:url(Images/Pres.png);
+  background-position:center center;
+  background-repeat : no-repeat ;
+  width: 100%;
+}
+
+/*Style of the box*/
+header .myAccount{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #516079;
+  border:4px solid #FFFFFF;
+}
+
+/*Style of the logo myAccount*/
+header .myAccount .logoAccount{
+  position: absolute;
+  right: 346px;
+  top: -50px;
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius:50%;
+  border:4px solid #FFFFFF;
+  width: 100px;
+  height: 100px;
+  background-color: #2E3244;
+}
+
+/*General style of the table with the user's informations*/
+header .myAccount .account{
+  border: 2px solid;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*Table parameters*/
+header .myAccount .account td, header .myAccount .account th {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+/*Change the color background 1 line of 2*/
+header .myAccount .account tr:nth-child(even){background-color: #2E3244;}
+
+/*Text style for the first column*/
+header .myAccount .account th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/*Text style for the second column*/
+header .myAccount .account td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+/*Text title style*/
+header .myAccount .account .table-title{
+  color: #FF0000;
+  font-family: 'Popins;', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*------------------------------- END MY ACCOUNT PAGE -------------------------------*/
+
+
+/*------------------------------- START RENT PAGE -------------------------------*/
+
+/*Inputs general place in the page*/
+header .rentReg {
+  justify-content: center;
+  align-items: center;
+  background-color: #2E3244;
+  width: 600px;
+  height: 1070px;
+  margin: 50px 400px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid;
+  color: #2E3244;
+}
+
+/*Text style*/
+header .rentReg .Rent{
+  color: #FF0000;
+  text-align: center;
+  font-family: 'Peralta', cursive;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/*Genral style and parameters inputs*/
+header .rentReg input[id="id"], input[id="surname"], input[id="firstname"], input[id="email"], input[id="mobile"], input[id="comment"], input[id="dateD"], input[id="dateR"]{
+padding: 15px;
+border-radius: 10px;
+border: none;
+background-color: #FFFFFF;
+margin-bottom: 20px;
+outline: none;
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+display: flex;
+width: 100%;
+}
+
+/*General style and parameters selects*/
+header .rentReg select[id="cityD"], select[id="cityR"], select[id="car"]{
+padding: 15px;
+border-radius: 10px;
+border: none;
+background-color: #FFFFFF;
+margin-bottom: 20px;
+outline: none;
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+display: flex;
+width: 100%;
+}
+
+/*Label text style*/
+header .rentReg label{
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*Button style*/
+header .rentReg .create{
+	margin-top: 20px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #2E3244;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #FF0000;
+  cursor: pointer;
+  color: #2E3244;
+}
+
+/*Text style*/
+header .quoteInfo{
+  color: #FF0000;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+/*------------------------------- END RENT PAGE -------------------------------*/
+
+/*------------------------------- START MY RESERVATION PAGE -------------------------------*/
+
+/*Style of the page with a fixed background image*/
+.pageMyReservation{
+  background-color:#FFFFFF;
+  background-attachment:fixed;
+  background-image:url(Images/Pres.png);
+  background-position:center center;
+  background-repeat : no-repeat ;
+  width: 100%;
+}
+
+/*Style of the box*/
+header .myReservation{
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1400px;
+  min-height: 300px;
+  border-radius: 20px;
+  background-color: #516079;
+  border:4px solid #FFFFFF;
+}
+
+/*Style of the logo myAccount*/
+header .myReservation .logoReservation{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
+  font-size: 50px;
+  padding-top: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius:50%;
+  border:4px solid #FFFFFF;
+  width: 100px;
+  height: 100px;
+  background-color: #2E3244;
+}
+
+/*General style of the table with the user's informations*/
+header .myReservation .reservation{
+  border: 2px solid;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+/*Table parameters*/
+header .myReservation .reservation td, header .myReservation .reservation th {
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+/*Change the color background 1 line of 2*/
+header .myReservation .reservation tr:nth-child(even){background-color: #2E3244;}
+
+/*Text style for the first column*/
+header .myReservation .reservation th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Text style for the second column*/
+header .myReservation .reservation td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+/*Text title style*/
+header .myReservation .reservation .table-title{
+  color: #FF0000;
+  font-family: 'Popins;', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/*------------------------------- END MY RESERVATION PAGE -------------------------------*/

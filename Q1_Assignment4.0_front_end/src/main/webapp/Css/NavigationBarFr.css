@@ -1,0 +1,204 @@
+/*Panel of colors:  #2E3244 night blue
+                    #C5C6C6 grey
+                    #FFFFFF white
+                    #FF0000 red
+                    #516079 blue grey
+
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+/*----------------------------------------------- START NAVIGAION BAR STYLE -----------------------------------------*/
+
+/*General aspect of the nav bar*/
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+/*Button wich allow to have the transition of the nav bar*/
+.btn{
+  position: absolute;
+  top: 145px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #2E3244;
+  cursor: pointer;
+  transition: left 1s ease;
+}
+
+/*When the user click on the button, the button goes to 230px on the right*/
+.btn.click{
+  left: 230px;
+}
+
+/*Style of the button*/
+.btn span{
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+/*Change the button to a cross*/
+.btn.click span:before{
+  content: '\f00d';
+}
+
+/*Navbar style*/
+.sidebar{
+  position: absolute;
+  width: 230px;
+  height: 92%;
+  left: -250px; /*when the button is not click*/
+  background: #2E3244;
+  transition: left 1s ease; /*navbar transition*/
+}
+
+/*Show the Navbar on the left side*/
+.sidebar.show{
+  left: 0px;
+}
+
+/*Style of the Navbar text*/
+.sidebar .text{
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #2E3244;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*---------All parameters for the style of the Nav Bar-----------*/
+/*List general parameters*/
+.sidebar ul{
+  background: #2E3244;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+.sidebar ul .feat-show.show{
+  display: block;
+}
+.sidebar ul .serv-show.show1{
+  display: block;
+}
+/*Border line list*/
+.sidebar ul li{
+  line-height: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+/*Border line list*/
+.sidebar ul li:last-child{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+/*Style for all the link in the list*/
+.sidebar ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+/*Style for the active link in the list*/
+.sidebar ul li.active a{
+  color: #FF0000;             /*change the text color*/
+  border-left-color: #FF0000; /*change the border color*/
+}
+/*Style when the mouse is hover the link*/
+.sidebar ul li a:hover{
+  background: #000000;  /*change background color*/
+}
+/*Style for all the paragraph in the list*/
+.sidebar ul li p{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+/*Style for the active link in the list*/
+.sidebar ul li.active p{
+  color: #FF0000;             /*change the text color*/
+  border-left-color: #FF0000; /*change the border color*/
+}
+/*Style when the mouse is hover a paragraph*/
+.sidebar ul li p:hover{
+  background: #000000;
+}
+
+/*Style to align logos*/
+.sidebar ul li a #accueilFr{
+  margin-left: 90px;
+}
+.sidebar ul li a #compteFr{
+  margin-left: 49px;
+}
+.sidebar ul li a #reservationFr{
+  margin-left: 18px;
+}
+.sidebar ul li a #blogFr{
+  margin-left: 115px;
+}
+.sidebar ul li a #contactFr{
+  margin-left: 82px;
+}
+
+/*Parameters for the second list (dropdown menu)*/
+.sidebar ul ul{
+  position: static;
+  display: none;
+}
+/*Parameters for the second list in the dropdown menu*/
+.sidebar ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+/*Style for the link in the dropdown menu*/
+.sidebar ul ul li a{
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-left: 80px;
+}
+/*Chnage the style when a link is active in the dropdown menu*/
+.sidebar ul li ul li .active{
+  color: #FF0000;
+  border-left-color: #FF0000;
+}
+/*Change the style for the other link that are not active*/
+.sidebar ul li ul li .other{
+  color: #FFFFFF;
+  background: #2E3244;
+  border-left-color: transparent;
+}
+/*Change the style when the mouse is hover a link in the dropdown menu*/
+.sidebar ul ul li a:hover{
+  color: #FF0000!important;
+  background: #000000!important;
+}
+/*Style for the arrow (dropdown menu)*/
+.sidebar ul li p span{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: transform 0.4s;
+}
+
+/*----------------------------------------------- END NAVIGAION BAR STYLE -----------------------------------------*/
